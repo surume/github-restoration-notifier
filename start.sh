@@ -1,6 +1,6 @@
 #!bin/zsh
 
-if [ type terminal-notifier 2>/dev/null 1>/dev/null ]; then
+if ! type terminal-notifier > /dev/null 2>&1; then
     brew install terminal-notifier
 fi
 
