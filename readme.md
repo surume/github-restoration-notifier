@@ -10,12 +10,14 @@ github が復旧したかどうか確認できる。
 
 ## Usage
 
-1. `curl -s https://raw.githubusercontent.com/Surume/github-restoration-notifier/master/start.sh | sh` で起動して正常稼働している場合は通知が飛ぶよ
+1. git clone git@github.com:Surume/github-restoration-notifier.git
+1. `sh ./start.sh` で起動して正常稼働している場合は通知が飛ぶよ
    - github が落ちているかどうか確認するときに便利だね！
 2. watch コマンドを噛ませれば監視も出来るね便利だね
 
    ```sh
-   watch -n30 "curl -s https://raw.githubusercontent.com/Surume/github-restoration-notifier/master/start.sh | sh"
+   watch -n30 sh ./start.sh
    ```
 
 3. さあみんなで `sh start.sh` !!
+
